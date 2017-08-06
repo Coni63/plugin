@@ -1,0 +1,93 @@
+*****************Avant de commencer***********
+
+
+-Recherchez sur votre ordi *.user.js
+-Vous pouvez les supprimer normalement (sauf réglages particuliers de recherche)
+-Gardez juste cette archive
+-Extraire le dossier plugin sur votre bureau
+-Merci de lire attentivement les changelog pour voir toutes les améliorations effectués, plugin crées, supprimés, modifiés, débuggé.
+-Attention la version unsafe créee de nombreuses requêtes au serveur qui peuvent être détectées, pour parer à cela une version plus_safe a été crée. Sur cette version le nombre de requête est fortement diminué mais nécessite que vous demandiez la requête (avec un bouton). Cela vous rend très nettement moins détectable au triches. C'est la version conseillé sauf si vous êtes très fainéant. Deplus cela accélère l'execution des plugin en ayant moins de tâches à réaliser.
+
+
+*****************Chrome**********************
+
+
+------->>>Beaucoup de nouveaux plugin ne sont plus compatible Chrome, il est donc déconseiller d'essayer de les installer. La liste complète des plugin qui ne fonctionne plus sur chrome sont affichés dans le changelog. Il est préférable de jouer à DO sur Firefox avec Greasmonkey
+
+-Aller à l'adresse suivante : chrome://extensions/
+-Supprimer tous les anciens plugin DO
+-Désactiver Tampermonkey
+-Glisser tous les plugins compatible UN par UN sauf jscharts.js
+
+
+
+****************Firefox**********************
+
+
+-Pour installer greasemonkey, aller sur https://addons.mozilla.org/fr/firefox/addon/greasemonkey/
+-Ouvrir greasemonkey
+-Supprimer tous les anciens plugin DO
+-Glisser tous les plugins UN par UN sauf jscharts.js
+
+-Pour Do_rc_info :
+	-Clique-droit sur Do_rc_info et "Afficher le dossier contenant"
+	-Ajouter jscharts.js dans le dossier
+
+-Ensuite, taper comme URL : "about:config" et accepter le message d'avertissement
+	-Passer à "true" les lignes suivantes:
+		-extensions.greasemonkey.fileIsGreaseable
+		-javascript.options.strict	
+	
+-Pour Do_safe_attaque 
+	-Clique-droit sur Do_safe_attaque et "Afficher le dossier contenant"
+	-Contrôler la présence de "124564065430139454Minduka_Alert.svg.med.png"
+	-S'il n'y ait pas... c'est pas normal (Me contacter)
+
+Pour DO_rc_info & Do_re_info
+	- Il faut régler dans la dernière case à cocher les unités que vous ne souhaitez pas voir parraitre dans la simulation en cliquant sur le bouton pour le passer à l'état "non"
+	-Actualiser le RC/RE
+
+Pour Do_boost:
+	-Au départ les taux seront à 85 / 95 mais seront sauvegardés dès le 1er changement
+
+
+Vous pouvez supprimer le dossier plugin de votre bureau
+Gardez l'archive quelque part au cas ou !
+Mettre le jeu avec affichage décimal des valeurs (et non exposant)
+Have Fun!
+
+                      d*##$.
+ zP"""""$e.           $"    $o
+4$       '$          $"      $
+'$        '$        J$       $F
+ 'b        $k       $>       $
+  $k        $r     J$       d$
+  '$         $     $"       $~
+   '$        "$   '$E       $
+    $         $L   $"      $F ...
+     $.       4B   $      $$$*"""*b
+     '$        $.  $$     $$      $F
+      "$       R$  $F     $"      $
+       $k      ?$ u*     dF      .$
+       ^$.      $$"     z$      u$$$$e
+        #$b             $E.dW@e$"    ?$
+         #$           .o$$# d$$$$c    ?F
+          $      .d$$#" . zo$>   #$r .uF
+          $L .u$*"      $&$$$k   .$$d$$F
+           $$"            ""^"$$$P"$P9$
+          JP              .o$$$$u:$P $$
+          $          ..ue$"      ""  $"
+         d$          $F              $
+         $$     ....udE             4B
+          #$    """"` $r            @$
+           ^$L        '$            $F
+             RN        4N           $
+              *$b                  d$
+               $$k                 $F
+               $$b                $F
+                 $""               $F
+                 '$                $
+                  $L               $
+                  '$               $
+                   $               $
+

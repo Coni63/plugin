@@ -1,0 +1,16 @@
+{
+   "content_scripts": [ {
+      "exclude_globs": [  ],
+      "exclude_matches": [  ],
+      "include_globs": [ "http://game.desert-operations.*/world*/*" ],
+      "js": [ "script.js"],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_idle"
+   } ],
+   "converted_from_user_script": true,
+   "description": "Ajoute une petite fen\u00EAtre comportant des informations relatives au combat : depenses, ratio...",
+   "key": "40s/hYqz4EgOx0ALGJD1Dvyyh+nVzkLU3dvgAplwrt4=",
+   "name": "DO RC Info",
+   "manifest_version": 2,
+   "version": "2.21"
+}

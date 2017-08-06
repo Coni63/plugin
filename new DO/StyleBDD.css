@@ -1,0 +1,62 @@
+.Uscript {
+   background-color: #574f4c;
+   width:537px;
+}
+.titleTabRow {
+   text-align: center;
+   font-family: "Courier New", Courier, monospace;
+   font-size: 11px;
+   background-color: #312c2a;
+   color: white;
+   width: 150px;
+}
+.color-green {
+   color: green;
+}
+.color-red {
+   color: red;
+}
+.color-white {
+   color: white;
+}
+.color-orange {
+   color: orange;
+}
+.color-purple {
+   color: purple;
+}
+.color-white {
+   color: white;
+}
+.color-blue {
+   color: blue;
+}
+.dataTabRow {
+   text-align: center;
+   font-family: "Courier New", Courier, monospace;
+   font-size: 11px;
+   background-color: #413b38;
+}
+.headTabRow {
+   text-align: center;
+   font-family: "Courier New", Courier, monospace;
+   font-size: 11px;
+   background-color: #312c2a;
+   color: white;
+}
+.playerTabRow {
+   color: white;
+   font-size: 14px;
+   text-align: center;
+   font-family: Verdana, Geneva, sans-serif;
+   border: 1px solid #574f4c !important;
+}
+.Uscript table {
+   border-width: thin;
+   border-spacing: 2px;
+   border-style: none;
+   border-color: black;
+}
+.Uscript td, th  {
+   border: 1px solid black;
+}

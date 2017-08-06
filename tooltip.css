@@ -1,0 +1,3594 @@
+*{
+	margin:0;
+	outline-style:none;
+	padding:0
+}
+
+body{
+	background-color:#0B0B0B;
+	color:#FFF;
+	cursor:default;
+	font-family:Tahoma,Arial,Verdana,sans-serif;
+	font-size:12px;
+	text-align:left
+}
+
+body.lightbox{
+	background-image:url(lightboxFrameSprite.png);
+	background-position:-699px top;
+	background-repeat:repeat-y
+}
+
+body.rtl{
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:14px
+}
+
+img{
+	border:0;
+	vertical-align:middle
+}
+
+.alignLeft{
+	text-align:left
+}
+
+.alignCenter{
+	text-align:center
+}
+
+.alignRight{
+	text-align:right
+}
+
+.noBreak{
+	white-space:nowrap
+}
+
+input,select,textarea{
+	background-color:#1E1E1C;
+	background-image:url(input.png);
+	border:2px ridge #302A1C;
+	color:#CCC;
+	font-family:Verdana,Arial,Helvetica;
+	font-size:12px;
+	margin:2px;
+	padding:4px
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	select{
+		background:#1E1E1C
+	}
+
+}
+
+input[type=submit]{
+	padding:3px 4px
+}
+
+input:focus,select:focus{
+	border:2px ridge #CCC
+}
+
+label{
+	cursor:pointer
+}
+
+ul{
+	margin:12px 0;
+	padding:0 0 0 40px
+}
+
+a{
+	cursor:pointer;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none
+}
+
+a img{
+	border-width:0
+}
+
+a:link,a:visited{
+	color:#FFF
+}
+
+a:hover,a:active{
+	color:#BFB9B5;
+	font-weight:bold;
+	text-decoration:none
+}
+
+.widthE1{
+	width:105px
+}
+
+.widthE2{
+	width:150px
+}
+
+.widthE3{
+	width:335px
+}
+
+.widthE4{
+	width:465px
+}
+
+#lightboxClose{
+	position:absolute;
+	width:30px;
+	height:30px;
+	left:585px;
+	top:9px
+}
+
+#lightboxClose.closeButton{
+	right:0;
+	top:0
+}
+
+.lightBoxMenuList{
+	display:none;
+	margin:5px 0 0;
+	padding:0
+}
+
+.lightBoxMenuItem{
+	float:left;
+	list-style:none
+}
+
+.lightBoxMenuLink{
+	background-image:url(buttons/btn_taskbar01.png);
+	background-repeat:no-repeat;
+	display:block;
+	height:32px;
+	width:38px
+}
+
+.lightBoxMenuLink.tradeSearch{
+	background-position:-114px 0
+}
+
+.lightBoxMenuLink.tradeSearch:hover{
+	background-position:-38px 0
+}
+
+.lightBoxMenuLink.tradeSearch:active,.lightBoxMenuLink.tradeSearch.active{
+	background-position:-76px 0
+}
+
+.lightBoxMenuLink.tradeSell{
+	background-position:-114px -32px
+}
+
+.lightBoxMenuLink.tradeSell:hover{
+	background-position:-38px -32px
+}
+
+.lightBoxMenuLink.tradeSell:active,.lightBoxMenuLink.tradeSell.active{
+	background-position:-76px -32px
+}
+
+.lightBoxMenuLink.tradeMyOffers{
+	background-position:-114px -64px
+}
+
+.lightBoxMenuLink.tradeMyOffers:hover{
+	background-position:-38px -64px
+}
+
+.lightBoxMenuLink.tradeMyOffers:active,.lightBoxMenuLink.tradeMyOffers.active{
+	background-position:-76px -64px
+}
+
+.lightBoxMenuLink.tradeMyShopping{
+	background-position:-114px -96px
+}
+
+.lightBoxMenuLink.tradeMyShopping:hover{
+	background-position:-38px -96px
+}
+
+.lightBoxMenuLink.tradeMyShopping:active,.lightBoxMenuLink.tradeMyShopping.active{
+	background-position:-76px -96px
+}
+
+.lightBoxMenuLink.tradeBlackMarket{
+	background-position:-114px -128px
+}
+
+.lightBoxMenuLink.tradeBlackMarket:hover{
+	background-position:-38px -128px
+}
+
+.lightBoxMenuLink.tradeBlackMarket:active,.lightBoxMenuLink.tradeBlackMarket.active{
+	background-position:-76px -128px
+}
+
+.lightBoxMenuLink.tradeVladimir{
+	background-position:-114px -160px
+}
+
+.lightBoxMenuLink.tradeVladimir:hover{
+	background-position:-38px -160px
+}
+
+.lightBoxMenuLink.tradeVladimir:active,.lightBoxMenuLink.tradeVladimir.active{
+	background-position:-76px -160px
+}
+
+.lightBoxMenuLink.researchArmy{
+	background-position:-114px -192px
+}
+
+.lightBoxMenuLink.researchArmy:hover{
+	background-position:-38px -192px
+}
+
+.lightBoxMenuLink.researchArmy:active,.lightBoxMenuLink.researchArmy.active{
+	background-position:-76px -192px
+}
+
+.lightBoxMenuLink.researchAir{
+	background-position:-114px -224px
+}
+
+.lightBoxMenuLink.researchAir:hover{
+	background-position:-38px -224px
+}
+
+.lightBoxMenuLink.researchAir:active,.lightBoxMenuLink.researchAir.active{
+	background-position:-76px -224px
+}
+
+.lightBoxMenuLink.researchNavy{
+	background-position:-114px -256px
+}
+
+.lightBoxMenuLink.researchNavy:hover{
+	background-position:-38px -256px
+}
+
+.lightBoxMenuLink.researchNavy:active,.lightBoxMenuLink.researchNavy.active{
+	background-position:-76px -256px
+}
+
+.lightBoxMenuLink.researchDefense{
+	background-position:-114px -288px
+}
+
+.lightBoxMenuLink.researchDefense:hover{
+	background-position:-38px -288px
+}
+
+.lightBoxMenuLink.researchDefense:active,.lightBoxMenuLink.researchDefense.active{
+	background-position:-76px -288px
+}
+
+.lightBoxMenuLink.researchUpgrade{
+	background-position:-114px -320px
+}
+
+.lightBoxMenuLink.researchUpgrade:hover{
+	background-position:-38px -320px
+}
+
+.lightBoxMenuLink.researchUpgrade:active,.lightBoxMenuLink.researchUpgrade.active{
+	background-position:-76px -320px
+}
+
+.lightBoxMenuLink.profileSettings{
+	background-position:-114px -352px
+}
+
+.lightBoxMenuLink.profileSettings:hover{
+	background-position:-38px -352px
+}
+
+.lightBoxMenuLink.profileSettings:active,.lightBoxMenuLink.profileSettings.active{
+	background-position:-76px -352px
+}
+
+.lightBoxMenuLink.profileMuteList{
+	background-position:-114px -384px
+}
+
+.lightBoxMenuLink.profileMuteList:hover{
+	background-position:-38px -384px
+}
+
+.lightBoxMenuLink.profileMuteList:active,.lightBoxMenuLink.profileMuteList.active{
+	background-position:-76px -384px
+}
+
+.lightBoxMenuLink.profileHoliday{
+	background-position:-114px -416px
+}
+
+.lightBoxMenuLink.profileHoliday:hover{
+	background-position:-38px -416px
+}
+
+.lightBoxMenuLink.profileHoliday:active,.lightBoxMenuLink.profileHoliday.active{
+	background-position:-76px -416px
+}
+
+.lightBoxMenuLink.profileDelete{
+	background-position:-114px -448px
+}
+
+.lightBoxMenuLink.profileDelete:hover{
+	background-position:-38px -448px
+}
+
+.lightBoxMenuLink.profileDelete:active,.lightBoxMenuLink.profileDelete.active{
+	background-position:-76px -448px
+}
+
+.displayNone{
+	display:none
+}
+
+.tbl_std{
+	background-color:#413D2F;
+	font-family:Arial,Helvetica,sans-serif;
+	border:1px solid #2f2219;
+	margin:0 auto
+}
+
+.tbl_std td{
+	padding:1px
+}
+
+#unitTableHeader{
+	margin:20px 0
+}
+
+#quickbuttonsUserDetails{
+	line-height:0;
+	margin-top:1.4px
+}
+
+div.milTableContainer{
+	overflow:auto
+}
+
+.milTable input.coordsSmall{
+	width:1em
+}
+
+.milTable input.coordsWide{
+	width:3.5em
+}
+
+.milTable div.inputFleedAssignment,.tblSpioStandard div.inputFleedAssignment{
+	margin:0 auto;
+	text-align:center
+}
+
+.milTable div.inputFleedAssignment{
+	width:145px
+}
+
+.milTable,.milTable th,.milCell,.switchAll{
+	text-align:center
+}
+
+.milTable th{
+	height:20px
+}
+
+.milTable td.defenseEntry{
+	height:16px
+}
+
+.milTable td,.milTable th{
+	padding:1px
+}
+
+div.milTable{
+	overflow:auto
+}
+
+.tblSpioStandard td{
+	white-space:nowrap
+}
+
+table.userDetails,table.milTable{
+	width:100%;
+	border:none;
+	border-collapse:separate;
+	border-spacing:1px
+}
+
+table.userDetails tr.head{
+	background-color:#4D4D4D
+}
+
+table.userDetails td.top{
+	vertical-align:top
+}
+
+table.userDetails table.ally{
+	width:100%;
+	border:none;
+	border-collapse:separate;
+	border-spacing:1px
+}
+
+table.userDetails table.ally td.head{
+	width:116px;
+	height:19px
+}
+
+table.userDetails table.ally td.date_entry{
+	width:45%;
+	text-align:left
+}
+
+table.userDetails table.ally td.until{
+	width:10%;
+	text-align:center
+}
+
+table.userDetails table.ally td.date_exit{
+	width:45%;
+	text-align:right
+}
+
+table.userDetails table.oldUsernames{
+	width:100%;
+	border:none;
+	border-collapse:separate;
+	border-spacing:1px
+}
+
+table.userDetails table.oldUsernames td{
+	border-spacing:1px
+}
+
+table.userDetails table.oldUsernames tr{
+	background-color:#302e2a
+}
+
+table.milTable td.vladimir{
+	font-weight:bold;
+	color:#AAFFAA
+}
+
+table.milTable tr{
+	background-color:#3D3A34
+}
+
+table.userDetails tr.head td{
+	height:15px
+}
+
+table.userDetails tr{
+	background-color:#302e2a
+}
+
+table.userDetails table.even,table.userDetails table.even td,table.userDetails table.even tr{
+	background-color:#3B3832
+}
+
+table.userDetails table.odd,table.userDetails table.odd td,table.userDetails table.odd tr{
+	background-color:#524D45
+}
+
+table.userDetails td{
+	height:19px;
+	padding:3px
+}
+
+table.userDetails tr.userImage td{
+	height:36px
+}
+
+table.standard{
+	border:none;
+	border-collapse:collapse;
+	margin:.5em 0;
+	padding:0;
+	width:100%
+}
+
+table.standard.extended{
+	margin:-0.5em 0 0
+}
+
+table.standard th,table.standard td{
+	color:#FFF;
+	margin:0;
+	padding:3px
+}
+
+table.standard th{
+	background-color:#302e2a;
+	font-family:Arial;
+	font-weight:700
+}
+
+table.standard td,table.standard tr.odd td{
+	background-color:#524D45
+}
+
+table.standard tr.even td{
+	background-color:#3B3832
+}
+
+table.standard tr.selfRow{
+	border-color:#FFF;
+	border-style:solid;
+	border-width:1px
+}
+
+table.standard tr.selfRow td{
+	background-color:#6b645a
+}
+
+table.standard tr.bottomLine{
+	border-bottom-style:solid;
+	border-bottom-color:#CCC;
+	border-bottom-width:1px
+}
+
+.block{
+	overflow:hidden;
+	width:581px
+}
+
+body.lightbox .block{
+	width:599px
+}
+
+.blockFoot{
+	padding:0.5em
+}
+
+h1.h1_400,h1.h1_335,h1.h1_270,h1.h1_225{
+	font-size:1.25em;
+	font-weight:700;
+	height:37px;
+	margin:.5em 0;
+	padding:.5em .5em 0
+}
+
+h1.h1_400{
+	background-image:url(2009_subheader_400.png);
+	background-repeat:no-repeat
+}
+
+h1.h1_270{
+	background-image:url(2009_subheader_270.png);
+	background-repeat:no-repeat
+}
+
+h1.h1_335{
+	background-image:url(2009_subheader_335.png);
+	background-repeat:no-repeat
+}
+
+h1.h1_225{
+	background-image:url(2009_subheader_225.png);
+	background-repeat:no-repeat
+}
+
+h1.blockHead{
+	background-image:url(2009_subheader_extern.png);
+	background-repeat:no-repeat;
+	font-family:Arial;
+	font-size:1.75em;
+	height:28px;
+	margin:3px 0 0;
+	padding:2px 6px
+}
+
+h1.blockHead.noSpike{
+	background-image:url(2009_subheader_extern_nospike_585.png)
+}
+
+.toggleContent .arrow{
+	height:16px;
+	width:16px;
+	padding:4px;
+	float:left
+}
+
+* .subbtn{
+	background-image:url(../btnSub.png);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	height:32px;
+	margin:0 0 6px 2px;
+	text-align:center;
+	width:190px
+}
+
+* .subbtn:hover{
+	background-position:0 -35px;
+	height:32px;
+	margin-top:0 0 6px 2px;
+	text-align:center;
+	width:190px
+}
+
+.subbtn a{
+	display:block;
+	height:28px;
+	position:relative;
+	text-align:center;
+	top:8px;
+	width:190px
+}
+
+.subbtn.premiumResource{
+	margin:0 auto
+}
+
+* .subbtn_av{
+	background-position:0 -70px;
+	height:32px;
+	margin:0 0 6px 2px;
+	text-align:center;
+	width:190px
+}
+
+.subbtn_av a{
+	display:block;
+	position:relative;
+	top:8px;
+	width:190px
+}
+
+.tooltipDefault{
+	background-color:#302e2a;
+	border-color:#CCC;
+	border-style:solid;
+	border-width:1px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	color:#FFF;
+	padding:4px;
+	text-align:left;
+	z-index:106
+}
+
+.tooltipContent{
+	display:none
+}
+
+.tooltipInterestRate{
+	max-width:240px
+}
+
+#allyimage.sized,#allyImageSizedWidth,#usrimage.sized,#usrImageSizedWidth{
+	width:563px
+}
+
+.formRow{
+	overflow:hidden
+}
+
+.color0{
+	background-color:#211E1B
+}
+
+.color1,.milTable .color1{
+	background-color:#302E2A
+}
+
+.color2,.milTable .color2{
+	background-color:#413C34
+}
+
+.color3,.milTable .color3{
+	background-color:#3B3832
+}
+
+.color4,.milTable .color4{
+	background-color:#524D45
+}
+
+.color5{
+	background-color:#504C45
+}
+
+.color6{
+	background-color:#5E5950
+}
+
+.color10{
+	background-color:#58534B
+}
+
+.grey2{
+	color:#CCC
+}
+
+.width1{
+	width:100px
+}
+
+.width2{
+	width:200px
+}
+
+.width3{
+	width:370px
+}
+
+.width4{
+	width:380px
+}
+
+.width5{
+	width:400px
+}
+
+.width6{
+	width:450px
+}
+
+.width7{
+	width:550px
+}
+
+.width8{
+	width:674px
+}
+
+.width9{
+	width:50px
+}
+
+.width10{
+	width:120px
+}
+
+.width11{
+	width:130px
+}
+
+.width12{
+	width:60%
+}
+
+.width13{
+	width:30%
+}
+
+.width14{
+	width:10%
+}
+
+.width15{
+	width:177px
+}
+
+.width16{
+	width:168px
+}
+
+.width17{
+	width:186px
+}
+
+.width18{
+	width:150px
+}
+
+.widthThird{
+	width:33%
+}
+
+.widthFourth{
+	width:25%
+}
+
+.widthHalf{
+	width:50% !important
+}
+
+.widthFull{
+	width:100%
+}
+
+.padding1{
+	padding:1px
+}
+
+.paddingRight1{
+	padding-right:10px
+}
+
+.formCategory{
+	height:21px;
+	margin:4px -5px 0 5px
+}
+
+.formCategory.rtl{
+	margin:4px 5px 0 -5px
+}
+
+.formLabel{
+	float:left;
+	margin:6px -5px 0 5px;
+	text-align:right
+}
+
+.formLabel.alliance{
+	width:142px
+}
+
+.formLabel.userSettingsHoliday,.formLabel.userSettings{
+	text-align:left
+}
+
+.formLabel.userSettings{
+	width:175px;
+	margin:0 5px
+}
+
+.formLabel.allianceBig{
+	width:220px
+}
+
+.formLabel.contact{
+	width:275px
+}
+
+.formLabel.rtl{
+	float:right;
+	margin:6px 5px 0 -5px;
+	text-align:left
+}
+
+.formField,.formButton{
+	float:left;
+	overflow:hidden
+}
+
+.formField.rtl,.formButton.rtl{
+	float:right
+}
+
+.formField.alliance,.formButton.alliance{
+	width:156px
+}
+
+.formField select{
+	width:197px
+}
+
+.formInfo{
+	float:left;
+	margin:6px 0 0 5px
+}
+
+.formInfo.rtl{
+	float:right
+}
+
+.formButton{
+	margin:0 0 0 142px
+}
+
+.formButton.rtl{
+	margin:0 142px 0 0
+}
+
+.formColumn{
+	float:left;
+	margin:3px -5px 3px 5px
+}
+
+.formColumn.rtl{
+	float:right;
+	margin:3px 5px 3px -5px
+}
+
+.formColumnTrade{
+	float:left;
+	margin:12px -5px 0 5px
+}
+
+.formColumnTrade.rtl{
+	float:right;
+	margin:12px 5px 0 -5px
+}
+
+.formColumnSell{
+	float:left;
+	margin:7px -5px 0 5px
+}
+
+.formColumnSell.rtl{
+	float:right;
+	margin:7px 5px 0 -5px
+}
+
+.formColumnCenter{
+	margin:3px 0;
+	text-align:center
+}
+
+.formColumnLeft{
+	margin:3px 0;
+	text-align:left;
+	float:left
+}
+
+.formColumnRight{
+	margin:3px 0;
+	text-align:right;
+	float:right
+}
+
+#formInfoAllianceName,#formInfoAllianceTag{
+	display:none
+}
+
+.formIndicatorImage{
+	background-image:url(icons/cancel.png);
+	background-repeat:no-repeat;
+	float:left;
+	height:15px;
+	width:20px
+}
+
+.formIndicatorImage.rtl{
+	float:right
+}
+
+.column90{
+	width:90%
+}
+
+.column85{
+	width:85%
+}
+
+.column60{
+	width:60%
+}
+
+.column50{
+	width:50%
+}
+
+.column40{
+	width:40%
+}
+
+.column35{
+	width:35%
+}
+
+.column33{
+	width:33%
+}
+
+.column30{
+	width:30%
+}
+
+.column25{
+	width:25%
+}
+
+.column20{
+	width:20%
+}
+
+.column15{
+	width:15%
+}
+
+.column10{
+	width:10%
+}
+
+.btn_inc,.btn_dec{
+	background-image:url(plus_und_minus/spriteUpDownButtons.gif);
+	background-repeat:no-repeat;
+	background-position:-42px 2px;
+	float:left;
+	height:26px;
+	top:2px;
+	width:14px;
+	margin:3px 0
+}
+
+.btn_inc.rtl,.btn_dec.rtl{
+	float:right
+}
+
+.btn_dec{
+	background-position:-28px 2px
+}
+
+.btn_inc:hover{
+	background-position:-56px 2px
+}
+
+.btn_dec:hover{
+	background-position:-14px 2px
+}
+
+.btn_inc.active{
+	background-position:-70px 2px
+}
+
+.btn_dec.active{
+	background-position:0 2px
+}
+
+.btn_input{
+	float:left
+}
+
+.btn_input.rtl{
+	float:right
+}
+
+.adjNumInput{
+	float:left
+}
+
+#bankInterest{
+	padding:14px 0
+}
+
+.ui-slider{
+	position:relative;
+	text-align:left
+}
+
+.ui-slider .ui-slider-handle{
+	cursor:default;
+	height:1.2em;
+	position:absolute;
+	width:1.2em;
+	z-index:2
+}
+
+.ui-slider .ui-slider-range{
+	background-position:0 0;
+	border:0;
+	display:block;
+	font-size:.7em;
+	position:absolute;
+	z-index:1
+}
+
+.ui-slider-horizontal{
+	border-color:#6b645a white white #6b645a;
+	border-style:solid;
+	border-width:1px;
+	display:inline-block;
+	height:25px;
+	margin:-7px 0 0;
+	-moz-border-radius:0
+}
+
+.ui-slider-horizontal .ui-slider-handle{
+	background-image:url(handle.horizontal.png);
+	border:0;
+	height:16px;
+	margin:-6px 0 0 -8px;
+	-moz-border-radius:0;
+	width:15px
+}
+
+.ui-slider-horizontal .ui-slider-range{
+	height:100%;
+	top:0
+}
+
+.ui-slider-horizontal .ui-slider-range-min{
+	left:0
+}
+
+.ui-slider-horizontal .ui-slider-range-max{
+	right:0
+}
+
+.ui-slider-vertical{
+	border-color:#6b645a white white #6b645a;
+	border-style:solid;
+	border-width:1px;
+	height:100px;
+	width:2px;
+	display:inline-block
+}
+
+.ui-slider-vertical .ui-slider-handle{
+	background-image:url(sectormap/sliderSlider.png);
+	border:0;
+	height:16px;
+	margin:-8px 0 0 -11px;
+	-moz-border-radius:0;
+	width:28px
+}
+
+.ui-slider-vertical .ui-slider-range{
+	left:0;
+	width:100%
+}
+
+.ui-slider-vertical .ui-slider-range-min{
+	bottom:0
+}
+
+.ui-slider-vertical .ui-slider-range-max{
+	top:0
+}
+
+.sliderBank,.sliderResources{
+	height:3px;
+	margin:5px 0 10px 20px;
+	width:150px
+}
+
+.sliderBank,.inputBank{
+	width:225px
+}
+
+.sliderBank.rtl,.sliderResources.rtl{
+	margin:5px 20px 10px 0
+}
+
+.sliderPremiumResource{
+	height:3px;
+	margin:0 0 3px;
+	width:150px
+}
+
+.sliderVladimir{
+	height:3px;
+	margin:0 0 3px;
+	width:150px
+}
+
+.payButton{
+	margin:11px 10px 0 0;
+	text-align:center;
+	width:150px
+}
+
+#basePanel{
+	display:none;
+	left:0;
+	position:absolute;
+	top:0;
+	z-index:1
+}
+
+#basePanel.userDetails{
+	position:absolute;
+	top:-15px
+}
+
+#basePanel.showBase{
+	display:block
+}
+
+#basePanel.base0,#basePanelNewPosition.base0{
+	left:310px;
+	top:305px
+}
+
+#basePanel.base1,#basePanelNewPosition.base1{
+	left:303px;
+	top:293px
+}
+
+#basePanel.base2,#basePanelNewPosition.base2{
+	left:410px;
+	top:203px
+}
+
+#basePanel.base3,#basePanelNewPosition.base3{
+	left:240px;
+	top:185px
+}
+
+#basePanel.base4,#basePanelNewPosition.base4{
+	left:285px;
+	top:330px
+}
+
+#basePanel.base5,#basePanelNewPosition.base5{
+	left:370px;
+	top:452px
+}
+
+#basePanel.base6,#basePanelNewPosition.base6{
+	left:288px;
+	top:473px
+}
+
+#basePanelArrow{
+	height:54px;
+	margin:-27px 0 0;
+	position:absolute;
+	top:50%;
+	width:32px
+}
+
+#basePanel.base1 #basePanelArrow,#basePanel.base2 #basePanelArrow,#basePanel.base4 #basePanelArrow,#basePanel.base5 #basePanelArrow,#basePanelArrow.left{
+	background-image:url(2009_basepanel_arrow_left.png);
+	left:-32px
+}
+
+#basePanel.base3 #basePanelArrow,#basePanel.base6 #basePanelArrow,#basePanelArrow.right{
+	background-image:url(2009_basepanel_arrow_right.png);
+	right:-32px
+}
+
+.panelArrow{
+	display:none;
+	position:absolute
+}
+
+.panelArrow.left{
+	background-image:url(2009_basepanel_arrow_left.png);
+	display:block;
+	height:54px;
+	left:-32px;
+	margin:-27px 0 0;
+	top:50%;
+	width:32px
+}
+
+.panelArrow.right{
+	background-image:url(2009_basepanel_arrow_right.png);
+	display:block;
+	height:54px;
+	margin:-27px 0 0;
+	right:-32px;
+	top:50%;
+	width:32px
+}
+
+.panelArrow.top{
+	background-image:url(2009_basepanel_arrow_up.png);
+	display:block;
+	height:32px;
+	left:50%;
+	margin:-31px 0 0 -21px;
+	width:54px
+}
+
+.panelArrow.bottom{
+	background-image:url(2009_basepanel_arrow_down.png);
+	display:block;
+	height:32px;
+	left:50%;
+	margin:0 0 0 -21px;
+	top:100%;
+	width:54px
+}
+
+.panelUpper,.panelLower,#basePanelUpper,#basePanelLower,#messageBoxBorderTop,#messageBoxBorderBottom,#loginBonusBoxBorderTop,#loginBonusBoxBorderBottom,.boxBorderTop,.boxBorderBottom{
+	display:block;
+	height:6px;
+	overflow:hidden;
+	width:100%
+}
+
+.panelUpper,#basePanelUpper,#messageBoxBorderTop,#loginBonusBoxBorderTop,.boxBorderTop{
+	background-image:url(2009_basepanel_uc.jpg)
+}
+
+.panelLower,#basePanelLower,#messageBoxBorderBottom,#loginBonusBoxBorderBottom,.boxBorderBottom{
+	background-image:url(2009_basepanel_lc.jpg)
+}
+
+.panelCorner,.basePanelCorner,.messageBoxBorderCorner,.loginBonusBoxBorderCorner,.boxBorderCorner,#messageBoxBorderTopLeft,#messageBoxBorderTopRight,#messageBoxBorderBottomLeft,#messageBoxBorderBottomRight{
+	background-image:url(basepanel_corners.png);
+	background-repeat:no-repeat;
+	height:6px;
+	width:6px
+}
+
+.panelUpperLeft,#basePanelUpperLeft,#messageBoxBorderTopLeft,#loginBonusBoxBorderTopLeft,.boxBorderTopLeft{
+	float:left
+}
+
+.panelUpperRight,#basePanelUpperRight,#messageBoxBorderTopRight,#loginBonusBoxBorderTopRight,.boxBorderTopRight{
+	background-position:-8px 0;
+	float:right
+}
+
+.panelClear,.basePanelClear,.messageBoxClear,.loginBonusBoxClear,.boxClear{
+	clear:both;
+	display:block
+}
+
+.panelMiddleLeft,#basePanelMiddleLeft,#messageBoxBorderMiddleLeft,#loginBonusBoxBorderMiddleLeft,.boxBorderMiddleLeft{
+	background-image:url(2009_basepanel_ml.jpg);
+	background-repeat:repeat-y;
+	padding:0 0 0 6px
+}
+
+.panelMiddleRight,#basePanelMiddleRight,#messageBoxBorderMiddleRight,#loginBonusBoxBorderMiddleRight,.boxBorderMiddleRight{
+	background-image:url(2009_basepanel_mr.jpg);
+	background-position:100% 0;
+	background-repeat:repeat-y;
+	padding:0 6px 0 0
+}
+
+.panelMiddleCenter,#basePanelMiddleCenter,#messageBoxBorderMiddleCenter,#loginBonusBoxBorderMiddleCenter,.boxBorderMiddleCenter{
+	background-image:url(2009_basepanel_mc.jpg);
+	background-repeat:repeat
+}
+
+.panelLowerLeft,#basePanelLowerLeft,#messageBoxBorderBottomLeft,#loginBonusBoxBorderBottomLeft,.boxBorderBottomLeft{
+	background-position:0 -8px;
+	float:left
+}
+
+.panelLowerRight,#basePanelLowerRight,#messageBoxBorderBottomRight,#loginBonusBoxBorderBottomRight,.boxBorderBottomRight{
+	background-position:-8px -8px;
+	float:right
+}
+
+.panelContent,#basePanelContent{
+	padding:5px 0 1px 2px
+}
+
+#basePanelContent h1{
+	font-size:1.25em;
+	font-weight:700;
+	text-align:center;
+	padding:0 0 15px
+}
+
+.panelClose,#basePanelClose{
+	padding:0;
+	text-align:right;
+	width:100%
+}
+
+#basePanelClose a{
+	font-size:.75em
+}
+
+#basePanel.rtl #basePanelClose{
+	text-align:left
+}
+
+#basePanelIcons{
+	margin:0 15px 5px
+}
+
+#basePanelIconsSmall{
+	margin:0
+}
+
+#basePanelIconAttack{
+	background-image:url(2009_panel_attack_inactive.png)
+}
+
+#basePanelIconAttack.active{
+	background-image:url(2009_panel_attack.png)
+}
+
+#basePanelIconSpy{
+	background-image:url(2009_panel_spy_inactive.png)
+}
+
+#basePanelIconSpy.active{
+	background-image:url(2009_panel_spy.png)
+}
+
+#basePanelIconMail{
+	background-image:url(2009_panel_message_inactive.png)
+}
+
+#basePanelIconMail.active{
+	background-image:url(2009_panel_message.png)
+}
+
+#basePanelIconSmallAttack{
+	background-image:url(2009_small_attack_inactive.png)
+}
+
+#basePanelIconSmallAttack.active{
+	background-image:url(2009_small_attack.png)
+}
+
+#basePanelIconSmallSpy{
+	background-image:url(2009_small_spy_inactive.png)
+}
+
+#basePanelIconSmallSpy.active{
+	background-image:url(2009_small_spy.png)
+}
+
+#basePanelIconSmallMail{
+	background-image:url(2009_small_message_inactive.png)
+}
+
+#basePanelIconSmallMail.active{
+	background-image:url(2009_small_message.png)
+}
+
+#basePanelIconSmallInviteUser,#basePanelIconSmallInviteUser.active{
+	background-image:url(alliance/invitation/btn_alliance-invite_sm.jpg)
+}
+
+#basePanelIconSmallInviteUser{
+	background-position:0 0
+}
+
+#basePanelIconSmallInviteUser.active{
+	background-position:0px -23px
+}
+
+#basePanelIconInviteUser,#basePanelIconInviteUser.active{
+	background-image:url(alliance/invitation/btn_alliance-invite.gif)
+}
+
+#basePanelIconInviteUser{
+	background-position:0 0
+}
+
+#basePanelIconInviteUser.active{
+	background-position:0px -58px
+}
+
+.basePanelIcon{
+	background-repeat:no-repeat;
+	display:inline-block;
+	height:58px;
+	margin:0 2px;
+	width:56px
+}
+
+.basePanelIcon.Small{
+	height:24px;
+	width:24px
+}
+
+#basePanelAttackForm,#basePanelSpyForm,#basePanelMailForm,#basePanelSpyActions{
+	display:none
+}
+
+#basePanelSpyForm p{
+	text-align:left;
+	padding:0 0 3px 45px
+}
+
+#basePanelSpyForm .input{
+	margin:0 4px 11px 45px
+}
+
+#basePanelSpyForm .build{
+	margin:0 0 0 84px
+}
+
+#basePanelMailForm #send{
+	width:175px
+}
+
+.basePanelAttackLink{
+	background-image:url(2009_panel_button.jpg);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	display:block;
+	width:110px;
+	padding:5px;
+	margin:0 54px 15px;
+	text-align:center
+}
+
+.basePanelAttackLink:hover{
+	background-position:0 -25px;
+	color:#DDD
+}
+
+.basePanelAttackLink:active{
+	background-position:0 -50px;
+	color:#DDD
+}
+
+.basePanelAttackLink.inactive{
+	color:#999
+}
+
+#basePanelSpyActions p{
+	padding:0 0 10px;
+	text-align:center
+}
+
+#basePanelMailForm .send{
+	margin:0 0 5px 53px
+}
+
+#basePanelMailSubject{
+	display:block;
+	margin:0 10px 5px;
+	width:265px
+}
+
+#basePanelMailText{
+	display:block;
+	height:239px;
+	margin:0 10px 5px;
+	width:265px
+}
+
+#messageBoxBorderTop,#messageBoxBorderBottom{
+	display:block;
+	height:6px;
+	overflow:hidden;
+	width:100%
+}
+
+#messageBoxBorderTop{
+	background-image:url(2009_basepanel_uc.jpg)
+}
+
+#messageBoxBorderBottom{
+	background-image:url(2009_basepanel_lc.jpg)
+}
+
+#messageBox .button,#messageBoxShade .button{
+	background-image:url(2009_panel_button.jpg);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	display:block;
+	height:15px;
+	margin:0 0 10px 45px;
+	padding:6px;
+	text-align:center;
+	text-decoration:none;
+	width:110px
+}
+
+#messageBox input.button{
+	height:27px;
+	width:200px
+}
+
+#messageBox .button:hover{
+	background-position:0 -25px
+}
+
+#messageBox .button:active{
+	background-position:0 -50px
+}
+
+#messageBox .buttonSmall,#messageBoxConfirmButtons .buttonSmall,#messageBoxAlertButton .buttonSmall{
+	background-image:url(2009_panel_button.jpg);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	display:block;
+	height:15px;
+	margin:0 4px;
+	padding:6px;
+	text-align:center;
+	text-decoration:none;
+	width:110px
+}
+
+#messageBox .buttonSmall:hover{
+	background-position:0 -25px
+}
+
+#messageBox .buttonSmall:active{
+	background-position:0 -50px
+}
+
+#messageBoxOverlay{
+	background-image:url(spacer.gif);
+	bottom:0;
+	display:none;
+	left:50%;
+	margin:0 -735px;
+	position:fixed;
+	right:50%;
+	top:0;
+	z-index:99
+}
+
+#messageBoxShade{
+	background-color:rgba(255,255,255,0.4);
+	margin:170px auto 0;
+	padding:5px;
+	width:320px
+}
+
+#messageBoxContent,#loginBonusBoxContent{
+	padding:15px;
+	text-align:center;
+	width:290px
+}
+
+#messageBoxAlertButton{
+	display:none;
+	margin:0 auto;
+	overflow:hidden;
+	width:200px
+}
+
+#messageBoxConfirmButtons{
+	display:none;
+	margin:0 25px;
+	overflow:hidden;
+	padding:0 0 15px;
+	width:276px
+}
+
+#messageBoxConfirmButtons .buttonSmall{
+	float:left
+}
+
+#messageBoxContent a{
+	font-weight:bold;
+	text-decoration:none
+}
+
+.dontShow{
+	display:none;
+	height:0;
+	overflow:hidden;
+	visibility:hidden;
+	width:0
+}
+
+.floatLeft{
+	float:left
+}
+
+.floatRight{
+	float:right
+}
+
+.clearBoth{
+	clear:both
+}
+
+.researchChecklist{
+	float:left;
+	width:235px
+}
+
+.researchChecklist.rtl{
+	float:right
+}
+
+#bankGraph,#tradeGraph,.statsGraph{
+	position:relative;
+	text-align:center
+}
+
+#bankGraphTitle,#tradeGraphTitle,.statsGraphTitle{
+	font-size:1.1em;
+	padding:3px 0 0;
+	position:absolute;
+	text-align:center;
+	top:0;
+	width:100%
+}
+
+.statsGraph .borderBottomBlue{
+	border-bottom:1px solid blue
+}
+
+.statsGraph .borderBottomRed{
+	border-bottom:1px solid red
+}
+
+.mit{
+	background-image:url(2009_panel_button.jpg);
+	height:24px;
+	margin:2px 1px;
+	text-align:center;
+	vertical-align:middle;
+	width:120px;
+	background-position:top
+}
+
+.mit.weaponsType.rtl{
+	float:right
+}
+
+.mit a{
+	display:block;
+	font-size:12px;
+	font-weight:bold;
+	height:22px;
+	padding:2px 0 0;
+	text-align:center;
+	text-decoration:none
+}
+
+.mit:hover,.mit a.active{
+	background-position:center
+}
+
+.mit.ltr{
+	float:left
+}
+
+.mit.rtl{
+	float:right
+}
+
+.mit_main{
+	background-image:url(gebfunction.png);
+	background-position:0 0;
+	margin:0;
+	padding:0px;
+	vertical-align:top;
+	width:220px
+}
+
+.mit_header{
+	background-image:url(gebfunction.png);
+	background-position:-220px top;
+	background-repeat:no-repeat;
+	width:220px
+}
+
+.mit_footer{
+	background-image:url(gebfunction.png);
+	background-position:-440px bottom;
+	background-repeat:no-repeat;
+	width:220px
+}
+
+.mit_main.ltr{
+	float:left
+}
+
+.mit_main.rtl{
+	float:right
+}
+
+.mit_main.active{
+	background-image:url(gebfunction.png);
+	background-position:-660px 0
+}
+
+.mit_main.active .mit_header{
+	background-image:url(gebfunction.png);
+	background-position:-880px top;
+	background-repeat:no-repeat
+}
+
+.mit_main.active .mit_footer{
+	background-image:url(gebfunction.png);
+	background-position:-1100px bottom;
+	background-repeat:no-repeat
+}
+
+.mit_footer a{
+	padding:2px 10px 6px 10px;
+	font-size:12px;
+	font-weight:bold;
+	margin-left:0px;
+	margin-right:0px;
+	display:block;
+	text-decoration:none;
+	text-align:center !important
+}
+
+.mit_small_main,.mit_small_header,.mit_small_footer{
+	background-image:url(gebfunc_small_tiled.png)
+}
+
+.mit_small_main{
+	background-position:0 0;
+	margin-top:3px;
+	margin-left:0px;
+	width:175px;
+	float:left
+}
+
+.mit_small_header{
+	background-position:-175px 0;
+	background-repeat:no-repeat;
+	width:175px
+}
+
+.mit_small_footer{
+	background-position:-350px 100%;
+	background-repeat:no-repeat;
+	width:175px
+}
+
+.mit_small_main.active{
+	background-position:-525px 0
+}
+
+.mit_small_main.active .mit_small_header{
+	background-position:-700px 0
+}
+
+.mit_small_main.active .mit_small_footer{
+	background-position:-875px 100%
+}
+
+.mit_small_footer a{
+	padding:2px 6px 6px;
+	font-size:12px;
+	font-weight:bold;
+	margin-left:0px;
+	margin-right:0px;
+	display:block;
+	text-align:center !important;
+	text-decoration:none
+}
+
+.researchImage{
+	width:100px
+}
+
+.researchBuildingImage{
+	height:120px;
+	width:110px
+}
+
+.changeFleetOrder{
+	width:53px;
+	height:30px;
+	margin:0 auto
+}
+
+.changeFleetOrderIndicator{
+	background:url("2009_ajax_loader.gif") no-repeat;
+	background-position:center;
+	width:53px;
+	height:30px
+}
+
+.changeFleetOrderIndicator.displayNone,#allianceMinimizeButton{
+	display:none
+}
+
+#showAccountValueGraphButton,#premiumGraphLink,#allianceMoreInfos{
+	display:inline-block;
+	float:none
+}
+
+.generalSign{
+	float:right
+}
+
+.generalSign.rtl{
+	float:left
+}
+
+#smallPrint{
+	color:#CCC;
+	font-size:10px;
+	margin:12px 0
+}
+
+.diamondForm{
+	padding:3px;
+	border-color:#211e1b;
+	border-style:solid;
+	border-width:1px;
+	width:190px;
+	background-color:#504c45;
+	text-align:center;
+	margin:0 auto
+}
+
+.formRow.premiumResourceBlock{
+	display:table-row
+}
+
+.formRow.premiumResourceBlock .formColumn{
+	display:table-cell;
+	float:none;
+	vertical-align:middle
+}
+
+.premiumResourceElement{
+	padding:4px
+}
+
+.premiumResourceSlider{
+	float:left;
+	padding:4px 0 4px 45px
+}
+
+.premiumResourceDiamondInput{
+	background-color:#6b645a;
+	border-color:#211e1b;
+	border-style:solid;
+	border-width:1px;
+	display:inline-block;
+	height:20px;
+	padding:0 2px 2px 2px;
+	width:150px;
+	vertical-algin:top
+}
+
+#accountValueNote{
+	padding:5px;
+	text-align:center
+}
+
+#premiumGraph{
+	display:none;
+	text-align:center;
+	width:600px
+}
+
+.underlineRed{
+	border-bottom-color:#0000FF;
+	border-bottom-style:solid;
+	border-bottom-width:1px
+}
+
+.underlineBlue{
+	border-bottom-color:#FF0000;
+	border-bottom-style:solid;
+	border-bottom-width:1px
+}
+
+#accountCurrentLabel{
+	float:left;
+	margin:0 0 0 90px;
+	text-align:left
+}
+
+#accountCurrentLabel.rtl{
+	float:right;
+	margin:0 90px 0 0;
+	text-align:right
+}
+
+#accountCurrentValues{
+	float:left;
+	margin:0 0 0 20px;
+	text-align:right
+}
+
+#accountCurrentValues.rtl{
+	float:right;
+	margin:0 20px 0 0;
+	text-align:left
+}
+
+#premiumGoodWeatherImage{
+	background-image:url(weatherSprite.jpg);
+	background-position:0 -570px;
+	background-repeat:no-repeat;
+	float:right;
+	height:95px;
+	width:245px
+}
+
+#premiumGoodWeatherImage.rtl{
+	float:left
+}
+
+.buildingNeeded{
+	background-image:url(bg_needed_bld.jpg);
+	background-repeat:no-repeat;
+	height:160px;
+	position:relative
+}
+
+.buildingNeededContent{
+	left:170px;
+	position:absolute
+}
+
+.buildingNeededImage{
+	height:auto;
+	width:120px
+}
+
+.buildingNeededCancelIcon{
+	left:-30px;
+	position:relative;
+	top:0px
+}
+
+#tradeSearchOfferButton.inactive,#tradeRequestOfferButton.inactive{
+	color:#808080
+}
+
+#tradeSearchOfferOptions,#tradeRequestOfferOptions{
+	margin:5px 0 0
+}
+
+#tradeSearchOfferOptions.inactive,#tradeRequestOfferOptions.inactive,#tradeSearchOfferResults.inactive,#tradeRequestOfferResults.inactive,#tradePublicPrice.inactive,#tradeAlliancePrice.inactive,#tradeNumberOfRequests.inactive{
+	display:none
+}
+
+#tradeSearchOfferSelect{
+	padding:1px;
+	width:200px
+}
+
+#tradeSearchSelectorText{
+	padding:5px 0 0
+}
+
+.tradeUsernameResults{
+	border-color:#CCC;
+	border-style:solid;
+	border-width:1px;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	background-color:#302e2a;
+	list-style-type:none;
+	margin:12px 0 0;
+	padding:3px 0;
+	width:120px
+}
+
+.tradeUsernameResults li a{
+	display:block;
+	padding:0 3px
+}
+
+.tradeUsernameResults li a.ui-state-hover{
+	background-color:#5e5950
+}
+
+#tradeSearchMoneyText{
+	padding:2px 0 0
+}
+
+.tradeStartSearchButton{
+	margin:0 0 0 5px;
+	text-align:center;
+	width:280px
+}
+
+.tradeSearchOfferRow{
+	padding:2px 0
+}
+
+#tradeSearchUserPartly{
+	padding:23px 0 2px
+}
+
+#tradeRequestInfoButton,#scrapDealerInfoButton,#battleStatisticsInfoButton{
+	cursor:help
+}
+
+#tradeRequestInfoButton span,#scrapDealerInfoButton span,#battleStatisticsInfoButton span{
+	border-bottom-style:dotted;
+	border-bottom-width:1px
+}
+
+#tradeRequestInfo,#scrapDealerInfo,#battleStatisticsInfo{
+	display:none;
+	left:15px;
+	position:absolute;
+	width:460px
+}
+
+#tradeRequestInfo{
+	top:185px
+}
+
+#tradeRequestInfo.graph{
+	top:325px
+}
+
+#scrapDealerInfo{
+	top:70px
+}
+
+#scrapDealerInfo.graph{
+	top:70px
+}
+
+#battleStatisticsInfo{
+	top:1110px;
+	left:135px;
+	width:400px
+}
+
+#tradeRequestInfobox{
+	display:none;
+	position:absolute
+}
+
+#tradeRequestInfobox img{
+	padding:0 0 0 10px
+}
+
+#tradeRequestInfoboxBackground{
+	background-image:url(2009_htmlAlertBg.png);
+	background-repeat:repeat;
+	padding:5px
+}
+
+#tradeSearchRequestSelect{
+	padding:1px;
+	width:220px
+}
+
+.tradeSearchSplittedCount{
+	width:70px
+}
+
+.colorAlliancePrice{
+	color:#AAFFAA
+}
+
+.tradePagination{
+	clear:both;
+	overflow:hidden
+}
+
+.tradePaginationMaximumPurchases,.tradePaginationPageText,#tradeNumberOfRequests{
+	background-color:#575757;
+	margin:1px;
+	padding:1px 2px 1px 2px
+}
+
+.tradePaginationMaximumPurchases,.tradePaginationPageText.rtl,#tradeNumberOfRequests,.tradePaginationPageText.rtl,.tradePaginationPageNumber.rtl,#tradeBlackMarketSelect.rtl,#tradeBlackMarketResourceImage.rtl,#tradeBlackMarketInput.rtl{
+	float:right
+}
+
+.tradePaginationMaximumPurchases.rtl,.tradePaginationPageText,#tradeNumberOfRequests.rtl,.tradePaginationPageText,#sheikAlGaiziPic{
+	float:left
+}
+
+.tradePaginationPageNumber{
+	background-color:#575757;
+	float:left;
+	margin:1px;
+	padding:1px 2px 1px 2px;
+	text-align:center;
+	width:15px
+}
+
+.tradePaginationPageNumber.odd{
+	background-color:#323232
+}
+
+div.tradeNoButton{
+	height:32px
+}
+
+#tradeRequestPercentageLimit,#tradeRequestPriceCount,input.noButtons{
+	margin:0 0 0 16px
+}
+
+#tradeRequestInfo .panelArrow,#scrapDealerInfo .panelArrow{
+	left:32px
+}
+
+#tradeRequestInfoClose,#scrapDealerInfoClose,#battleStatisticsInfoClose{
+	margin:10px 0 0;
+	text-align:center
+}
+
+#tradeRequestInfoClose .panelAttackLink,#scrapDealerInfoClose .panelAttackLink,#battleStatisticsInfoClose .panelAttackLink{
+	margin:0 auto
+}
+
+.tradeExchangeCourse{
+	padding:2px 0
+}
+
+#tradeSaleResourceDropdown{
+	padding:1px;
+	width:220px
+}
+
+#tradeBlackMarket{
+	background-image:url(oilsheik.png);
+	background-repeat:no-repeat;
+	background-position:right bottom;
+	height:363px;
+	overflow:hidden;
+	position:relative;
+	top:0;
+	width:100%
+}
+
+#tradeBlackMarketContent{
+	float:left;
+	left:0;
+	position:relative;
+	top:0
+}
+
+#tradeBlackMarketIntroduction{
+	font-size:1.2em;
+	font-weight:bold
+}
+
+#tradeBlackMarketHappyHour{
+	border-top-color:#AEAEAE;
+	border-top-style:solid;
+	border-top-width:1px;
+	color:#FFAA00;
+	margin:15px 0 0;
+	padding:15px 0 0
+}
+
+#tradeBlackMarketResourceForm{
+	margin:10px 0 0
+}
+
+#tradeBlackMarketSelect{
+	float:left;
+	margin:0 0 5px
+}
+
+#tradeBlackMarketResource{
+	padding:1px;
+	width:120px
+}
+
+#tradeBlackMarketResourceImage{
+	background-image:url(resources/cero.gif);
+	background-repeat:no-repeat;
+	background-position:center 0;
+	float:left;
+	height:48px;
+	width:120px
+}
+
+#tradeBlackMarketResourceImage.gold{
+	background-image:url(resources/gold.gif)
+}
+
+#tradeBlackMarketResourceImage.oil{
+	background-image:url(resources/oel.gif)
+}
+
+#tradeBlackMarketResourceImage.ammo{
+	background-image:url(resources/munition.gif)
+}
+
+#tradeBlackMarketResourceImage.diesel{
+	background-image:url(resources/diesel.gif)
+}
+
+#tradeBlackMarketResourceImage.kerosene{
+	background-image:url(resources/cero.gif)
+}
+
+#tradeBlackMarketInput{
+	float:left;
+	padding:10px 0 0
+}
+
+#tradeBlackMarketAmount{
+	width:130px
+}
+
+.speechBubble{
+	background-image:url(speechBubbleBorderLeftRightSpike.gif);
+	background-repeat:no-repeat;
+	background-position:center;
+	overflow:hidden;
+	padding:0 11px 0 5px;
+	width:362px
+}
+
+.speechBubble p{
+	margin:0
+}
+
+.speechBubbleTop,.speechBubbleBottom{
+	background-image:url(speechBubbleBorderTopBottom.gif);
+	background-repeat:no-repeat;
+	height:5px;
+	margin:0 6px 0 0;
+	width:372px
+}
+
+.speechBubbleBottom{
+	background-position:0 -5px
+}
+
+#sheikAlGaiziBox{
+	margin:0 0 0 300px
+}
+
+#sheikAlGaiziBox.rtl{
+	margin:0 3px 0 300px
+}
+
+#sheikCallBox{
+	background-color:#504c45;
+	border-color:#211e1b;
+	border-style:solid;
+	border-width:1px;
+	margin:8px 0;
+	padding:8px;
+	text-align:center
+}
+
+#sheikCallBox .subbtn{
+	margin:4px auto
+}
+
+#sheikCallBox input{
+	width:30px
+}
+
+#tradeVladimirInputBox{
+	padding:4px
+}
+
+#basePanelArrow{
+	height:54px;
+	margin:-27px 0 0;
+	position:absolute;
+	top:50%;
+	width:32px
+}
+
+#basePanelArrow.left{
+	background-image:url(2009_basepanel_arrow_left.png);
+	left:-32px
+}
+
+#basePanelArrow.right{
+	background-image:url(2009_basepanel_arrow_right.png);
+	right:-32px
+}
+
+.panelArrow{
+	display:none;
+	position:absolute
+}
+
+.panelArrow.left{
+	background-image:url(2009_basepanel_arrow_left.png);
+	display:block;
+	height:54px;
+	left:-32px;
+	margin:-27px 0 0;
+	top:50%;
+	width:32px
+}
+
+.panelArrow.right{
+	background-image:url(2009_basepanel_arrow_right.png);
+	display:block;
+	height:54px;
+	margin:-27px 0 0;
+	right:-32px;
+	top:50%;
+	width:32px
+}
+
+.panelArrow.top{
+	background-image:url(2009_basepanel_arrow_up.png);
+	display:block;
+	height:32px;
+	left:50%;
+	margin:-31px 0 0 -21px;
+	width:54px
+}
+
+.panelArrow.bottom{
+	background-image:url(2009_basepanel_arrow_down.png);
+	display:block;
+	height:32px;
+	left:50%;
+	margin:0 0 0 -21px;
+	top:100%;
+	width:54px
+}
+
+.closeButton{
+	background-image:url(spriteCloseButton.png);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	height:30px;
+	position:absolute;
+	right:-9px;
+	top:-9px;
+	width:30px
+}
+
+.closeButton:hover{
+	background-position:-30px 0
+}
+
+.closeButton:active{
+	background-position:-60px 0
+}
+
+.panelAttackLink{
+	background-image:url(2009_panel_button.jpg);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	display:block;
+	height:15px;
+	margin:0 0 0 20%;
+	padding:5px;
+	width:110px
+}
+
+.panelAttackLink:hover{
+	background-position:0 -25px;
+	color:#DDD
+}
+
+.panelAttackLink:active{
+	background-position:0 -50px;
+	color:#DDD
+}
+
+#allianceDetailsMemberHeadline{
+	float:left;
+	width:345px
+}
+
+#allianceDetailsMemberHeadline.rtl{
+	float:right
+}
+
+#allianceDetailsDiplomacyHeadline{
+	padding:0 0 0 5px;
+	float:left;
+	width:231px
+}
+
+#allianceDetailsDiplomacyHeadline.rtl{
+	float:right
+}
+
+#allianceDetailsMembersAndDiplomacy{
+	margin:-7px 0 10px;
+	width:100%
+}
+
+#allianceDetailsMembers{
+	border-right:6px solid #000;
+	vertical-align:top;
+	width:350px
+}
+
+#allianceDetailsMembers.rtl{
+	border-left:6px solid #000;
+	border-right:0
+}
+
+#allianceDetailsDiplomacy{
+	vertical-align:top;
+	width:233px
+}
+
+.allianceLink.bnd{
+	color:#00FF00
+}
+
+.allianceLink.bndNot{
+	color:#4AC24A
+}
+
+.allianceLink.nap{
+	color:#00CCFF
+}
+
+.allianceLink.napNot{
+	color:#64B6CB
+}
+
+.allianceLink.war{
+	color:#FF0000
+}
+
+.allianceLink.warNot{
+	color:#E78052
+}
+
+.userDetailsAchievement{
+	float:left;
+	height:50px;
+	width:50px;
+	padding:0 1px
+}
+
+#simBackground{
+	background-color:#504c45;
+	overflow:hidden
+}
+
+#loadSbContainer label{
+	margin:0 5px 0 0
+}
+
+#loadSbContainer input{
+	width:200px
+}
+
+#loadSbContainer #loadSb{
+	margin:10px 0 0 33px;
+	width:122px
+}
+
+#submitSb{
+	margin:5px auto;
+	text-align:center !important;
+	width:480px
+}
+
+.simUnitName{
+	clear:both;
+	font-weight:bold;
+	font-size:125%;
+	text-align:center;
+	padding:10px 0 5px;
+	margin:0
+}
+
+.simUnitTblHead{
+	float:left;
+	text-align:center;
+	font-weight:bold;
+	background-color:#302E2A;
+	border:1px solid #504C45;
+	padding:5px 0
+}
+
+.simUnitTblRow{
+	clear:both;
+	height:32px
+}
+
+.simUnitTblCell{
+	float:left;
+	margin:0 1px
+}
+
+.simUnitTblCell .adjNumInput{
+	width:170px
+}
+
+.simUnitTblCell .adjNumInput.small{
+	width:72px
+}
+
+.simUnitTblCell fieldset{
+	height:110px;
+	padding:5px
+}
+
+.simUnitTblFleet{
+	padding:5px;
+	width:279px
+}
+
+.simUnitTblAttCnt{
+	width:215px;
+	margin-left:5px
+}
+
+.simUnitTblAttOrd{
+	margin-right:10px;
+	width:62px
+}
+
+.simUnitTblDefContainer{
+	float:right;
+	width:285px
+}
+
+.simUnitTblDefCnt{
+	width:155px
+}
+
+.simUnitTblDefOrd{
+	width:60px
+}
+
+.simUnitTblDefFlt{
+	width:60px;
+	margin-right:5px
+}
+
+.simUnitTblSimLevel{
+	width:66px
+}
+
+.simIcons{
+	float:left;
+	width:30px;
+	margin:8px 4px 0 0
+}
+
+.simIcon{
+	display:inline-block;
+	height:11px;
+	width:11px
+}
+
+.simIcon.add{
+	background-image:url(plus_und_minus/sim_plus.png)
+}
+
+.simIcon.remove{
+	background-image:url(plus_und_minus/sim_close.png)
+}
+
+.clearfix:after{
+	content:".";
+	display:block;
+	clear:both;
+	font-size:0;
+	height:0;
+	visibility:hidden
+}
+
+*:first-child+html .clearfix{
+	min-height:0
+}
+
+* html .clearfix{
+	height:1%
+}
+
+#toggleShowFleetOrder{
+	position:absolute;
+	right:5px;
+	top:0;
+	width:195px;
+	height:31px;
+	margin:5px 5px 0
+}
+
+#toggleShowFleetOrder .displayRight{
+	margin:5px 408px 0
+}
+
+#showFleetOrderIcon{
+	background-image:url(2009_toggleShowFleetOrderLeft.png);
+	background-repeat:no-repeat;
+	height:15px;
+	width:30px;
+	float:left;
+	padding:8px 0;
+	text-align:center
+}
+
+#showFleetOrderText{
+	background-image:url(2009_toggleShowFleetOrderRight.png);
+	background-repeat:no-repeat;
+	height:31px;
+	width:165px;
+	float:left;
+	text-align:center
+}
+
+#showFleetOrderText:hover{
+	background-image:url(2009_toggleShowFleetOrderRightHover.png);
+	background-repeat:no-repeat
+}
+
+#showFleetOrderText:active{
+	background-image:url(2009_toggleShowFleetOrderRightActive.png);
+	background-repeat:no-repeat
+}
+
+#showFleetOrderText a{
+	display:block;
+	padding:7px 0;
+	font-weight:700
+}
+
+.usernameSearchResults,.friendSearchResults,.allianceSearchResults,.receiverSearchResults,.mutelistSearchResults{
+	border-color:#CCC;
+	border-style:solid;
+	border-width:1px;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	background-color:#302e2a;
+	list-style-type:none;
+	margin:1px 0 0;
+	padding:3px 0;
+	width:120px
+}
+
+.usernameSearchResults li a,.friendSearchResults li a,.allianceSearchResults li a,.receiverSearchResults li a,.mutelistSearchResults li a{
+	display:block;
+	padding:0 3px
+}
+
+.usernameSearchResults li a.ui-state-hover,.friendSearchResults li a.ui-state-hover,.allianceSearchResults li a.ui-state-hover,.receiverSearchResults li a.ui-state-hover,.mutelistSearchResults li a.ui-state-hover{
+	background-color:#5e5950
+}
+
+.mutelistSearchResults{
+	margin-top:11px
+}
+
+#muteList{
+	text-align:center;
+	font-weight:bold;
+	width:250px;
+	min-height:100px;
+	border:2px solid #5E5950;
+	background-image:none;
+	background-repeat:repeat;
+	background-attachment:scroll;
+	background-color:#323232;
+	margin:0 auto
+}
+
+.muteListItem{
+	margin-left:5px;
+	text-align:left;
+	font-size:14px
+}
+
+.muteListItem:hover,.muteListItemDelete:hover{
+	background-image:url(2009_bg_buddyListItem.gif);
+	background-repeat:no-repeat
+}
+
+.muteListItem:hover{
+	background-position:228px -18px;
+	margin-right:5px
+}
+
+.muteListItemDelete{
+	float:right;
+	display:inline;
+	width:15px;
+	height:15px
+}
+
+.muteListItemDelete:hover{
+	background-position:-14px -18px
+}
+
+input.userSettingsImage[type="text"]{
+	width:80%
+}
+
+input.userSettingsInputMutelist[type="text"]{
+	width:242px;
+	margin-top:-2px
+}
+
+input.userSettingsBtnMute[type="submit"]{
+	width:254px;
+	margin-top:2px
+}
+
+#tblUserSettings{
+	border-spacing:0 1px;
+	width:100%
+}
+
+#tblUserSettings td,#tblUserSettings th{
+	padding:3px
+}
+
+#tblUserSettings th{
+	text-align:center
+}
+
+table.tblSpioStandard{
+	width:100%;
+	border-spacing:1px
+}
+
+table.tblSpioStandard td,table.tblSpioStandard th{
+	padding:1px
+}
+
+table.tblSpioStandard tr.head,table.tblAgentStandard tr.height25,.height25{
+	height:25px
+}
+
+table.tblSpioStandard tr.head th,.height20{
+	height:20px
+}
+
+table.tblSpioStandard td.height52,.height52{
+	height:52px
+}
+
+table.tblSpioStandard td.height18,.height18{
+	height:18px
+}
+
+table.tblSpioStandard div.inputFleedAssignment{
+	width:114px
+}
+
+table.tblAgentStandard{
+	width:100%;
+	padding:2px;
+	border-spacing:2
+}
+
+table.tblAgentStandard td,table.tblAgentStandard th{
+	padding:2px
+}
+
+table.tblFleedDetail{
+	border-spacing:1px
+}
+
+table.tblFleedDetail td{
+	padding:2px
+}
+
+table.tblFleedDetail.noBorder{
+	border:0;
+	border-spacing:0
+}
+
+.allianceLink.bnd{
+	color:#00FF00
+}
+
+.allianceLink.bndNot{
+	color:#4AC24A
+}
+
+.allianceLink.nap{
+	color:#00CCFF
+}
+
+.allianceLink.napNot{
+	color:#64B6CB
+}
+
+.allianceLink.war{
+	color:#FF0000
+}
+
+.allianceLink.warNot{
+	color:#E78052
+}
+
+#crossTableActions{
+	margin:0 5px
+}
+
+#crossTableActions .mit{
+	float:left
+}
+
+#crossTableContainer{
+	background-color:#413D2F;
+	border:1px solid #2F2219;
+	display:inline-block;
+	font-size:.95em;
+	position:relative
+}
+
+.crossTableList{
+	list-style:none;
+	margin:0;
+	padding:0;
+	white-space:nowrap
+}
+
+.crossTableList .unitName,.crossTableList .condition,#crossTableActions .condition{
+	display:inline-block;
+	font-weight:700;
+	padding:0 1px;
+	vertical-align:middle
+}
+
+.crossTableList .unitName,.crossTableList .condition{
+	display:table-cell
+}
+
+.crossTableList .unitName{
+	font-family:Arial,Helvetica,sans-serif;
+	text-align:right;
+	width:200px
+}
+
+.crossTableList .unitName span{
+	white-space:normal
+}
+
+.crossTableList .unitName .showTooltipSpan{
+	display:block
+}
+
+.crossTableList .unitName.first{
+	position:relative
+}
+
+#crossTableInfoBox{
+	left:250px;
+	position:absolute;
+	text-align:left;
+	top:-15px;
+	white-space:normal;
+	width:175px
+}
+
+.crossTableList .condition>span,#crossTableActions .condition>span{
+	background-position:center;
+	background-repeat:no-repeat;
+	display:block;
+	height:16px;
+	text-align:center;
+	width:16px
+}
+
+.crossTableList .condition.green>span,.crossTableList .condition.yellow>span,.crossTableList .condition.red>span,#crossTableActions .condition.green>span,#crossTableActions .condition.yellow>span,#crossTableActions .condition.red>span{
+	background-image:url(icons/cross_table.png);
+	background-repeat:no-repeat
+}
+
+.crossTableList .condition.green>span,#crossTableActions .condition.green>span{
+	background-position:-34px center
+}
+
+.crossTableList .condition.yellow>span,#crossTableActions .condition.yellow>span{
+	background-position:-18px center
+}
+
+.crossTableList .condition.red>span,#crossTableActions .condition.red>span{
+	background-position:0 center
+}
+
+.crossTableList .condition.tick>span{
+	background-image:url(icons/tick.png)
+}
+
+.crossTableList .condition.cross>span{
+	background-image:url(icons/cancel.png)
+}
+
+.crossTableHoverActive{
+	background-color:#6b645a
+}
+
+#crossTableTipContainer{
+	display:inline-block;
+	font-size:.85em;
+	line-height:1em;
+	position:relative
+}
+
+#crossTableTipList{
+	list-style:none;
+	margin:0;
+	padding:0
+}
+
+#crossTableTipList ul{
+	margin:0;
+	padding:0 0 0 20px
+}
+
+.crossTableTipColumn{
+	float:left;
+	margin:0 5px;
+	width:140px
+}
+
+.crossTableTipLine{
+	bottom:0;
+	background-color:#FFF;
+	left:150px;
+	position:absolute;
+	top:0;
+	width:1px
+}
+
+.crossTableTipLine.second{
+	left:300px
+}
+
+#recruitBlock{
+	width:100%;
+	overflow:hidden;
+	position:relative;
+	top:0px
+}
+
+#recruitBlock div.left{
+	float:left;
+	width:48%
+}
+
+#recruitBlock div.left #recruitmentLink{
+	padding:2px;
+	text-align:left;
+	width:450px;
+	background-color:#302e2a;
+	border:2px solid #6b645a
+}
+
+#recruitBlock div.left #recruitmentLink p{
+	position:relative;
+	z-index:2;
+	width:350px
+}
+
+#recruitBlock div.right{
+	float:right
+}
+
+#ulAchievements{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width:100%
+}
+
+#ulAchievements li.achievementOrder{
+	margin-bottom:5px;
+	display:table;
+	width:100%
+}
+
+#ulAchievements .icon{
+	height:100px;
+	width:100px;
+	float:left
+}
+
+#ulAchievements .achievement{
+	min-height:100px;
+	display:table-cell;
+	vertical-align:middle;
+	width:443px
+}
+
+#ulAchievements div.reset{
+	clear:left
+}
+
+.achievement p{
+	padding-right:45px
+}
+
+.achievement ul{
+	margin:0;
+	list-style-type:none
+}
+
+.achievement li{
+	margin-left:15px
+}
+
+#ulAchievements li.achievementOrder div.achievement-headline,#ulAchievements li.achievementOrder ul,#ulAchievements li.achievementOrder p{
+	margin-left:10px
+}
+
+#buildingTechtree div{
+	text-align:center;
+	width:150px;
+	position:absolute;
+	font-weight:bold
+}
+
+#buildingTechtree div.commandCenter,#buildingTechtree div.factory{
+	top:10px
+}
+
+#buildingTechtree div.mine,#buildingTechtree div.university,#buildingTechtree div.university,#buildingTechtree div.oilRefinery,#buildingTechtree div.ammunitionFactory{
+	top:408px
+}
+
+#buildingTechtree div.barracks,#buildingTechtree div.market{
+	top:542px
+}
+
+#buildingTechtree div.simulator,#buildingTechtree div.port,#buildingTechtree div.airport,#buildingTechtree div.weaponFactory{
+	top:662px
+}
+
+#buildingTechtree div.bank{
+	left:6px;
+	top:133px
+}
+
+#buildingTechtree div.commandCenter{
+	left:175px
+}
+
+#buildingTechtree div.factory{
+	left:365px
+}
+
+#buildingTechtree div.homes{
+	left:456px;
+	top:228px
+}
+
+#buildingTechtree div.highRise{
+	left:225px;
+	top:243px
+}
+
+#buildingTechtree div.mine{
+	left:10px
+}
+
+#buildingTechtree div.university{
+	left:150px
+}
+
+#buildingTechtree div.oilRefinery{
+	left:320px
+}
+
+#buildingTechtree div.ammunitionFactory{
+	left:456px
+}
+
+#buildingTechtree div.barracks{
+	left:152px
+}
+
+#buildingTechtree div.market{
+	left:313px
+}
+
+#buildingTechtree div.simulator{
+	left:6px
+}
+
+#buildingTechtree div.port{
+	left:160px
+}
+
+#buildingTechtree div.airport{
+	left:320px
+}
+
+#buildingTechtree div.weaponFactory{
+	left:456px
+}
+
+#buildingTechtree div.pentagon{
+	left:346px;
+	top:742px
+}
+
+.buildingNeeded .barracks,.buildingNeeded .ammunitionFactory,.buildingNeeded .simulator,.buildingNeeded .weaponFactory,.buildingNeeded .pentagon,.easterEggEntry{
+	position:absolute
+}
+
+.buildingNeeded .barracks{
+	left:25px
+}
+
+.buildingNeeded .ammunitionFactory{
+	left:170px
+}
+
+.buildingNeeded .simulator{
+	left:310px
+}
+
+.buildingNeeded .weaponFactory{
+	left:445px
+}
+
+.buildingNeeded .pentagon{
+	left:195px
+}
+
+.productionModeTable{
+	border:0;
+	border-collapse:separate;
+	border-spacing:1px;
+	height:50px;
+	width:100%
+}
+
+.floatDirection.ltr{
+	float:left
+}
+
+.floatDirection.rtl{
+	float:right
+}
+
+.productionModeTable .unit_image{
+	height:19px;
+	width:94px
+}
+
+.productionModeTable .unit_description{
+	height:25px;
+	width:231px
+}
+
+.productionModeTable .unit_icons{
+	width:99px
+}
+
+.productionModeTable .unit_form{
+	vertical-align:middle
+}
+
+#productionDiamondsImage{
+	float:left;
+	padding:7px 5px 0 0
+}
+
+#productionDiamondsText{
+	float:left;
+	text-align:center;
+	width:255px
+}
+
+.researchGeologyImage{
+	max-width:100px
+}
+
+.achievement-headline{
+	width:100%;
+	display:table
+}
+
+.achievement-headline-text{
+	vertical-align:top;
+	display:table-cell
+}
+
+.achievement-headline-visibility{
+	width:40px;
+	height:40px;
+	display:table-cell;
+	vertical-align:middle
+}
+
+.achievement-headline-visibility div{
+	overflow:hidden;
+	height:40px;
+	text-align:right
+}
+
+.achievement-headline-visibility div:hover{
+	overflow:visible
+}
+
+.achievement-headline-visibility select{
+	font-size:0.8em;
+	border:2px ridge #302A1C;
+	position:relative
+}
+
+.achievement-headline-visibility-list option{
+	padding-left:8px
+}
+
+.openblock{
+	position:relative
+}
+
+#visibilityDialog{
+	display:none;
+	position:absolute;
+	top:260px;
+	width:281px;
+	z-index:104;
+	background:url("lightboxFrameSprite.png") -699px top repeat-y
+}
+
+.visibilityMenu{
+	list-style-type:none;
+	list-style-position:0px;
+	margin:12px;
+	padding:0px
+}
+
+.visibilityMenu li a{
+	font-size:11px
+}
+
+.visibility-menu-item{
+	padding:2px 0px 0px 34px;
+	background:url(visibility-item.png) left center no-repeat;
+	height:20px;
+	margin:2px 0
+}
+
+.visibility-menu-item-checked{
+	padding:2px 0px 0px 34px;
+	background:url(visibility-item-checked.png) left center no-repeat;
+	height:20px;
+	margin:2px 0;
+	color:#fff
+}
+
+.visibility-menu-item a{
+	color:#656563
+}
+
+.visibility-menu-item-checked a{
+	color:#fff
+}
+
+.visibility-item{
+	background:url(buttons/btn_visibility.png) 0 0 no-repeat;
+	cursor:pointer
+}
+
+.visibility-item-visible{
+	background-position:-40px 0
+}
+
+.crossTableHoverCrossed{
+	background-color:#0001fc
+}
+
+.crossTableHoveredName{
+	background-color:#008500
+}
+
+.playzo-slider-button{
+	height:16px;
+	margin:-6px -7px;
+	width:15px;
+	position:relative
+}
+
+.rulesOfTheGameList{
+	list-style-type:decimal
+}
+
+.rulesOfTheGame{
+	padding:0 0 20px
+}
+
+#pollFormContent{
+	margin-top:2px
+}
+
+.pollProgress{
+	margin:5px 15px 5px 15px;
+	overflow:hidden
+}
+
+.pollProgressBack{
+	float:left;
+	height:18px;
+	text-align:center;
+	width:80px
+}
+
+.pollProgressForward{
+	float:left;
+	height:18px;
+	text-align:center;
+	width:80px
+}
+
+.pollProgress input{
+	border-width:1px;
+	padding:0
+}
+
+.pollProgressOuter{
+	border:1px #8F8677 solid;
+	height:18px;
+	margin:0 0 2px 0;
+	text-align:left
+}
+
+.pollProgressOuter.progress{
+	float:left;
+	width:395px
+}
+
+.pollProgressOuter .left,.pollProgressOuter .right{
+	margin:-17px 0 0 0;
+	padding:0 5px 0 5px
+}
+
+.pollProgressOuter .left{
+	float:left
+}
+
+.pollProgressOuter .right{
+	float:right
+}
+
+.pollProgressInner{
+	background-color:#323232;
+	height:100%;
+	text-align:right
+}
+
+.pollProgressInner span{
+	display:inline-block;
+	padding:0 5px 0 5px
+}
+
+.questionElement{
+	clear:both;
+	margin:8px 15px 8px 15px
+}
+
+.questionInput{
+	float:left;
+	margin:-2px 0 0 0;
+	width:25px
+}
+
+.questionLabel{
+	margin:0 0 0 30px
+}
+
+#allianceDetails{
+	width:100%;
+	display:inline-block
+}
+
+#allianceDetails img.coatOfArms{
+	float:right
+}
+
+.joinAllianceDetails{
+	margin:-2px
+}
+
+#report,div.battleReportBackground{
+	background-color:#574F4C
+}
+
+div.battleReport{
+	background-color:#413B38;
+	border:1px solid #2A2624;
+	color:#FFFFFF;
+	font-family:Arial;
+	font-size:16px;
+	margin:0 auto;
+	padding:4px;
+	width:450px
+}
+
+a:link.battleReport,a:active.battleReport,a:visited.battleReport,a:hover.battleReport{
+	color:#CCCCCC;
+	font-size:10px
+}
+
+a:hover.battleReport{
+	color:#DDDDDD
+}
+
+p.battleReport{
+	color:#FFFFFF;
+	font-size:14px
+}
+
+h1.battleReport{
+	color:#FFFFFF;
+	font-size:20px;
+	margin:0 0 20px
+}
+
+h2.battleReport{
+	color:#FFFFFF;
+	font-size:16px
+}
+
+h2.tableHeader{
+	margin:10px 0
+}
+
+table.battleReport{
+	background-color:#413B38;
+	border:1px solid #2A2624;
+	border-spacing:3px;
+	width:450px
+}
+
+table.battleReport th{
+	background-color:#312C2A
+}
+
+div.battleReportProtocol{
+	font-size:14px;
+	margin:20px 0 0;
+	position:relative;
+	width:450px
+}
+
+div.battleReportProtocol h2{
+	background-color:#312C2A;
+	margin:2px;
+	padding:2px
+}
+
+div.battleReportProtocol p{
+	background-color:#47403D;
+	font-size:14px;
+	margin:2px;
+	padding:2px
+}
+
+div.spionageReportBackground{
+	background-color:#574F4C
+}
+
+div.spionageReport{
+	background-color:#413B38;
+	border:1px solid #2A2624;
+	color:#FFFFFF;
+	font-family:Arial;
+	font-size:16px;
+	margin:0 auto;
+	padding:4px;
+	width:450px
+}
+
+div.spionageReport table{
+	border:1px solid #2A2624;
+	width:450px
+}
+
+div.spionageReport th{
+	background-color:#312C2A
+}
+
+div.spionageReport td.rightAlign{
+	text-align:right
+}
+
+p.spionageReport{
+	color:#FFFFFF;
+	font-size:14px
+}
+
+h1.spionageReport{
+	color:#FFFFFF;
+	font-size:20px;
+	margin:0 0 20px
+}
+
+h2.spionageReport{
+	color:#FFFFFF;
+	font-size:16px
+}
+
+#countdownForm{
+	z-index:1;
+	position:absolute;
+	left:110px;
+	text-align:center;
+	width:400px
+}
+
+.block-head-frame{
+	float:right;
+	font-size:small;
+	font-weight:normal;
+	display:table;
+	height:100%
+}
+
+.block-head-information{
+	display:table-cell;
+	margin:0;
+	vertical-align:middle
+}
+
+#tradingCounter{
+	font-size:2.5em
+}
+
+p.weakHeader{
+	margin-bottom:10px
+}
